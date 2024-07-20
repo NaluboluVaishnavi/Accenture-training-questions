@@ -1,0 +1,15 @@
+#question:you are given an inteeger array of size N,representing jars of chocolates.Three students A,B and C respectively,will pick chocoltes
+#one by one from each chocolate jar,till the jar is empty and then repeat the same
+# JAR 2: 20 Chocolates -> A-7,  
+#n= int(input())
+#arr = list(map(int,input().split(" ")))
+n=3
+#arr = [10,20,30]
+arr = [10,10,10]
+total_cho_a = 0
+#10/3= 3
+for num_of_chocolates in arr:
+    total_cho_a += (num_of_chocolates//3)
+    if num_of_chocolates%3 !=0:
+        total_cho_a +=1
+print(total_cho_a)
